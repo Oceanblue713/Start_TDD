@@ -9,8 +9,16 @@ class Card
       @suit = suit 
       @rank = rank
     else  
-       @suit = "UNKNOWN"
-       @rank = "UNKNOWN"
+      @suit = "UNKNOWN"
+      @rank = "UNKNOWN"
+    end
+
+    def to_s 
+      if show 
+        "#{rank} of #{suit}"
+      else 
+        ""
+      end
     end
   end
 end
